@@ -16,6 +16,12 @@ header {
   top: 20px;
 }
 
+.logo {
+  width: 40%;
+  top: 20px;
+  position: relative;
+}
+
 main {
   height: 400px;
 }
@@ -23,6 +29,10 @@ main {
 .container {
   text-align: center;
   position: relative;
+}
+
+h1 {
+  visibility: hidden;
 }
 
 .bottom-section {
