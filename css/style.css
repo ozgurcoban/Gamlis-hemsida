@@ -8,37 +8,55 @@ html,
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
   background-color: #f4f4f4;
 }
 
+header {
+  text-align: center;
+  top: 20px;
+}
+
 main {
-  height: 700px;
+  height: 400px;
+}
+
+.container {
+  text-align: center;
   position: relative;
 }
 
-.header {
-  text-align: center;
+.bottom-section {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  bottom: 10px;
 }
 
-.header-image {
-  background-size: cover;
-  height: 800px;
-}
-
-.btn {
-  color: #f4f4f4;
-  border: none;
-  padding: 10px 40px;
-  font-size: 16px;
-  background: #34495e;
+#button {
   cursor: pointer;
   border-radius: 8px;
-  text-align: center;
-  margin: auto;
+  padding: 10px 40px;
+  font-size: 16px;
+  margin: 0 auto;
 }
 
-.btn:hover {
+.btn-menu {
+  color: #f4f4f4;
+  border: none;
+  background: #34495e;
+}
+.btn-tel {
+  color: #f4f4f4;
+  border: none;
+  background: #57345e;
+}
+
+#button:hover {
   background-color: #2e4053;
 }
 
