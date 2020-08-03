@@ -17,18 +17,17 @@ header {
 }
 
 .logo {
-  width: 160px;
+  width: 250px;
   top: 20px;
   position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
   height: 400px;
-}
-
-.container {
-  text-align: center;
-  position: relative;
 }
 
 h1 {
@@ -44,7 +43,8 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 160px;
-  bottom: 10px;
+  bottom: 20px;
+  text-align: center;
 }
 
 #button {
@@ -68,6 +68,26 @@ h1 {
 
 #button:hover {
   background-color: #2e4053;
+  top: 200px;
+}
+
+.header-img {
+  position: absolute;
+  width: 20rem;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+header p {
+  max-width: 300px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-bar {
