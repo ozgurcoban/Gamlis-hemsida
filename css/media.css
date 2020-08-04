@@ -1,18 +1,51 @@
+/* Smartphones */
 @media only screen and (max-width: 480px) {
+  header {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .header-img {
-    max-width: 1em;
+    max-width: 2em;
+  }
+
+  #button {
+    min-width: 10rem;
+    max-height: 10rem;
+  }
+
+  .container {
+    height: 40rem;
+  }
+
+  header p {
+    font-size: 0.7rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .header-img {
     width: 30rem;
     max-width: 90%;
   }
+  #button {
+    min-width: 12em;
+  }
 }
-@media only screen and (max-width: 1600px) {
+
+/* Desktop */
+@media only screen and (min-width: 769px) and (max-width: 1600px) {
   .header-img {
     width: 60rem;
     max-width: 90%;
+  }
+
+  #button {
+    min-width: 12rem;
+    min-height: auto;
   }
 }
