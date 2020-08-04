@@ -7,7 +7,7 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 5px 0;
 }
 body {
   background-color: rgba(233, 226, 164, 0.27);
@@ -73,9 +73,10 @@ header p {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
   bottom: 10px;
   text-align: center;
+  height: auto;
 }
 
 #button {
