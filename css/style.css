@@ -143,10 +143,11 @@ a.logo {
   }
 
   .banner-area a.banner-btn {
-    padding: 1.2rem 4.9rem;
+    padding: 1rem 2.1rem;
     border-radius: 3rem;
     text-transform: uppercase;
     margin: 0.3rem;
+    box-shadow: 0 10px 10px 0 rgba(255,255,255,0.2), 0 10px 10px 0 rgba(0,0,0,0.19);
   }
 
   .banner-area .menu-btn {
@@ -155,7 +156,7 @@ a.logo {
 
   .banner-area .phone-btn {
     background: rgba(255, 255, 255, 0.7);
-    border: 1px solid #333;
+    border: 1px solid transparent;
     color: #333;
   }
 
@@ -216,4 +217,5 @@ a.logo {
   .opening-hours li {
     height: 20px;
     margin: 10px;
+    padding-bottom: 1rem;
   }

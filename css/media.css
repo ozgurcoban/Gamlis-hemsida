@@ -7,6 +7,7 @@
   header {
     flex-direction: column;
   }
+}
 
   @media screen and (max-width: 1000px) {
     section {
@@ -46,5 +47,30 @@
   a.logo {
     width: 80%;
     margin-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .banner-area h3 {
+    margin-bottom: 9rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .banner-area .banner-btn {
+    padding: 2rem 9rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .banner-area h1 {
+    font-size: 5rem;
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+  }
+  
+  .banner-area h3 {
+    font-size: 2rem;
   }
 }
