@@ -8,10 +8,10 @@
 
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -21,7 +21,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-li, nav {
+li,
+nav {
   list-style: none;
 }
 
@@ -29,7 +30,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
-  
+
 }
 
 header {
@@ -53,191 +54,209 @@ header nav {
   display: flex;
 }
 
-header nav li{
-margin: 0 15px;
+header nav li {
+  margin: 0 15px;
 }
 
 header nav li:first-child {
   margin-left: 0;
 }
+
 header nav li:last-child {
   margin-right: 0;
 }
 
 header .logo {
-    margin-bottom: 1rem;
-    content: url(/img/gamlis_logga.png);
-  }
+  margin-bottom: 1rem;
+  content: url(/img/gamlis_logga.png);
+}
 
 a.logo {
   width: 20%;
 }
 
-  header nav li {
-    margin: 0 1rem;
-    visibility: hidden;
-  }
+header nav li {
+  margin: 0 1rem;
+  visibility: hidden;
+}
 
-  /* Banner Area */
+/* Banner Area */
 
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7rem 6rem;
-  }
-  
-  section p {
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: 0 1.2rem;
-    line-height: 2;
-  }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 6rem;
+}
 
-  .banner-area {
-    position: relative;
-    justify-content: center;
-    min-height: 80vh;
-    color: #fff;
-    text-align: center;
-    
-  }
+section p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1.2rem;
+  line-height: 2;
+}
 
-  .banner-area .banner-img {
-    background-image: url(/img/header.jpeg);
-    background-position: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-  }
+.banner-area {
+  position: relative;
+  justify-content: center;
+  min-height: 80vh;
+  color: #fff;
+  text-align: center;
 
-  .banner-area .banner-img::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: .73;
-  }
+}
 
-  .banner-area h1 {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    font-size: 4rem;
-    font-family: merienda;
-    text-transform: uppercase;
-    font-family: Oswald, Helvetica, sans-serif;
-  }
+.banner-area .banner-img {
+  background-image: url(/img/header.jpeg);
+  background-position: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
 
-  .banner-area h3 {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-  }
+.banner-area .banner-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .73;
+}
 
-  .banner-area a.banner-btn {
-    padding: 1rem 2.1rem;
-    border-radius: 3rem;
-    /* text-transform: uppercase; */
-    margin: 0.3rem;
-    box-shadow: 0 10px 10px 0 rgba(255,255,255,0.2), 0 10px 10px 0 rgba(0,0,0,0.19);
-  }
+.banner-area h1 {
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  font-size: 2.2rem;
+  font-family: merienda;
+  text-transform: uppercase;
+  font-family: Oswald, Helvetica, sans-serif;
+}
 
-  .banner-area .menu-btn {
-    background: #D8232A;
-    
-  } 
+.banner-area h3 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
 
-  .banner-area .phone-btn {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid transparent;
-    color: #333;
-  }
+.banner-area a.banner-btn {
+  padding: 1rem 2.1rem;
+  border-radius: 3rem;
+  /* text-transform: uppercase; */
+  margin: 0.3rem;
+  box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+}
 
-  .cta-buttons i {
-    font-weight: 900;
-  }
+.banner-area .menu-btn {
+  background: #D8232A;
 
-  /* Om oss */
+}
 
-  ul.about-content {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.banner-area .phone-btn {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid transparent;
+  color: #333;
+}
 
-  .about-content li {
-    padding: 1.2rem;
-    height: 18rem;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-  }
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -2rem;
+}
 
-  .about-left {
-    flex-basis: 40%;
-    background-image: url(/img/gamlis-exterior.jpeg);
-    
-  }
+.cta-buttons i {
+  font-weight: 900;
+}
 
-  .about-right {
-    flex-basis: 60%;
-  }
+i.fab {
+  font-size: 2rem;
+  padding: 0.7rem;
+}
 
-  .about-area p {
-    max-width: 800px;
-    margin-bottom: 2.1rem;
-    line-height: 1.5;
-    text-align: left;
-    padding: 0;
-  }
+.social-btn {
+  position: absolute;
+  margin-top: 8rem;
+}
 
-  .section-title {
-    margin-top: -1.5em;
-    text-transform: uppercase;
-    font-size: 3.12rem;
-    margin-bottom: 5%;
-  }
+/* Om oss */
 
-  .about-right h2 {
-    margin-bottom: 3%;
-  }
+ul.about-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .about-btn {
-    padding: 1rem 3rem;
-    background: crimson;
-    border-radius: 3rem;
-    color: #fff;
-    text-transform: uppercase;
-  }
+.about-content li {
+  padding: 1.2rem;
+  height: 18rem;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
 
-  .opening-hours li {
-    height: 20px;
-    margin: 10px;
-    padding-bottom: 1rem;
-  }
+.about-left {
+  flex-basis: 40%;
+  background-image: url(/img/gamlis-exterior.jpeg);
 
-  .fa-file-pdf {
-    font-size: 1rem;
-  }
+}
 
-  .fa-phone-rotary {
-    font-size: 1rem;
-  }
+.about-right {
+  flex-basis: 60%;
+}
 
-  /* Footer */
-  .page-footer {
-    height: 10vh;
-    background-color: lightslategray;
-    bottom: 0;
-    position: absolute;
-  }
+.about-area p {
+  max-width: 800px;
+  margin-bottom: 2.1rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0;
+}
+
+.section-title {
+  margin-top: -1.5em;
+  text-transform: uppercase;
+  font-size: 3.12rem;
+  margin-bottom: 5%;
+}
+
+.about-right h2 {
+  margin-bottom: 3%;
+}
+
+.about-btn {
+  padding: 1rem 3rem;
+  background: crimson;
+  border-radius: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.opening-hours li {
+  height: 20px;
+  margin: 10px;
+  padding-bottom: 1rem;
+}
+
+.fa-file-pdf {
+  font-size: 1rem;
+}
+
+.fa-phone-rotary {
+  font-size: 1rem;
+}
+
+/* Footer */
+.page-footer {
+  height: 10vh;
+  background-color: lightslategray;
+  bottom: 0;
+  position: absolute;
+}
