@@ -19,6 +19,17 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 li,
@@ -176,7 +187,7 @@ section p {
 }
 
 i.fab {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.7rem;
 }
 
@@ -253,10 +264,38 @@ ul.about-content {
   font-size: 1rem;
 }
 
+/* .opening-hours {
+  bottom: 10rem;
+} */
+
 /* Footer */
 .page-footer {
-  height: 10vh;
-  background-color: lightslategray;
-  bottom: 0;
-  position: absolute;
+  background-color: rgba(71, 64, 64, 0.9);
+  height: 8rem;
+  margin-top: 9rem;
+  display: flex;
+}
+
+.footer-content {
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+address {
+  font-size: 0.8rem;
+  color: lightgray;
+  padding: 0.5rem
+}
+
+.footer-social {
+  color: #f4f4f4;
+}
+
+.footer-content .phone,
+li {
+  color: #f4f4f4;
 }
