@@ -223,18 +223,21 @@ ul.about-content {
   flex-basis: 60%;
 }
 
+.about-area {
+  margin-bottom: 10rem;
+}
+
 .about-area p {
   max-width: 800px;
-  margin-bottom: 2.1rem;
   line-height: 1.5;
   text-align: left;
   padding: 0;
 }
 
 .section-title {
-  margin-top: -1.5em;
+  margin-top: -1.8em;
   text-transform: uppercase;
-  font-size: 3.12rem;
+  font-size: 2.8rem;
   margin-bottom: 5%;
 }
 
@@ -271,24 +274,32 @@ ul.about-content {
 /* Footer */
 .page-footer {
   background-color: rgba(71, 64, 64, 0.9);
-  height: 8rem;
-  margin-top: 9rem;
+  height: 13rem;
   display: flex;
+  justify-content: center;
+
 }
 
 .footer-content {
-  margin: auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
-  align-content: center;
   align-items: center;
+  padding: 40px;
 }
 
 address {
   font-size: 0.8rem;
   color: lightgray;
-  padding: 0.5rem
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.footer-content li {
+  color: #f4f4f4;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  padding: 0.4rem
 }
 
 .footer-social {
@@ -297,4 +308,9 @@ address {
 
 .footer-content .phone {
   color: #f4f4f4;
+  padding: 0.5rem;
+}
+
+.phone {
+  text-decoration: underline;
 }
