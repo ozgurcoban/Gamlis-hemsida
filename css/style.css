@@ -79,6 +79,7 @@ header nav li:last-child {
 }
 
 header .logo {
+  display: block;
   margin-bottom: 1rem;
   content: url(/img/gamlis_logga.png);
   animation: logo-load var(--logo-load-time) ease-in;
