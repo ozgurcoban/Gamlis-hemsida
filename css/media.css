@@ -26,7 +26,7 @@
   } */
 
   .banner-area a.banner-btn {
-    padding: 1rem 2.1rem;
+    padding: 1rem 3.1rem;
   }
 
   a {
@@ -97,12 +97,3 @@
     font-size: 2rem;
   }
 }
-
-/* @media screen and (max-width: 350px) {
-  .cta-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -20px;
-  }
-} */
