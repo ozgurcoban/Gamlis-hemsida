@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --logo-load-time: 500ms;
 }
 
 html {
@@ -80,6 +81,18 @@ header nav li:last-child {
 header .logo {
   margin-bottom: 1rem;
   content: url(/img/gamlis_logga.png);
+  animation: logo-load var(--logo-load-time) ease-in;
+
+}
+
+@keyframes logo-load {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
 }
 
 a.logo {
@@ -157,7 +170,7 @@ section p {
 }
 
 .banner-area a.banner-btn {
-  padding: 1rem 2.1rem;
+  padding: 1rem 4.1rem;
   border-radius: 3rem;
   /* text-transform: uppercase; */
   margin: 0.3rem;
@@ -298,8 +311,6 @@ address {
   font-weight: bold;
 }
 
-
-
 .footer-content li {
   color: #f4f4f4;
   letter-spacing: 0.1rem;
@@ -311,7 +322,7 @@ address {
 
 .footer-social {
   color: #f4f4f4;
-  margin-bottom: 0.5§rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-content .phone {
