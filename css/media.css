@@ -14,6 +14,32 @@
   section {
     padding: 8rem 2rem;
   }
+
+  footer {
+    padding: 2.2rem;
+  }
+
+  footer .container {
+    flex-flow: column wrap;
+  }
+
+  footer .container .sec {
+    margin-right: 0;
+    /* margin-bottom: 2.5rem; */
+  }
+
+  footer .container .sec.about-us,
+  .contact {
+    width: 100%;
+  }
+
+  .copy-text {
+    padding: 0.5rem 3.3rem;
+  }
+
+  .about-us {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -30,7 +56,7 @@
   }
 
   a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 

@@ -21,9 +21,9 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
   min-height: 100vh;
 }
 
@@ -238,7 +238,7 @@ ul.about-content {
 }
 
 .about-area {
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
 }
 
 .about-area p {
@@ -286,7 +286,7 @@ ul.about-content {
 } */
 
 /* Footer */
-.page-footer {
+/* .page-footer {
   background-color: rgba(71, 64, 64, 0.9);
   height: 18rem;
   display: flex;
@@ -339,4 +339,136 @@ address {
 
 .footer-content .copy {
   font-size: 0.6rem;
+} */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: rgba(71, 64, 64, 0.9);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #f4f4f4;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+}
+
+footer .container .sec {
+  margin-right: 30px;
+}
+
+footer .container .sec .about-us {
+  width: 40%
+}
+
+footer .container h2 {
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+footer .container h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #D8232A;
+}
+
+.footer-social {
+  margin-top: 1.2rem;
+  display: flex;
+}
+
+.footer-social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(33, 34, 33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.8rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.footer-social li a:hover {
+  background: #D8232A;
+}
+
+.footer-social .svg-inline--fa {
+  color: #fff;
+  font-size: 1.11rem;
+}
+
+.contact {
+  width: calc(35% - 1rem);
+  margin-right: 0 !important;
+}
+
+.contact .info {
+  position: relative;
+}
+
+.contact .info li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.contact .info li span:nth-child(1) {
+  color: #f4f4f4;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.contact .info li span {
+  color: #999;
+}
+
+.fa-phone-alt,
+.fa-map-marker-smile {
+  font-size: 1.2rem;
+}
+
+.about-us p,
+.contact .ft-address {
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+}
+
+.fa-map-marker-smile {
+  margin-right: 0.2rem;
+}
+
+.contact .info li a {
+  color: #999;
+}
+
+.contact .info li a:hover {
+  color: #f4f4f4;
+}
+
+.ft-address {
+  font-size: 0.9rem;
+}
+
+.copy-text {
+  width: 100%;
+  background: #181818;
+  padding: 0.5rem 6rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.7rem;
+  letter-spacing: 0.12rem;
+  /* text-transform: uppercase; */
 }
