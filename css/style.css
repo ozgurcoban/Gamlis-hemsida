@@ -90,16 +90,24 @@ header .logo {
 @keyframes logo-load {
   0% {
     transform: scale(0);
-    100% transform: scale(100%);
   }
 
-  @-webkit-keyframes logo-load 0% {
-    -webkit-transform: scale(0);
-
-
-    100% -webkit-transform: scale(100%);
+  100% {
+    transform: scale(100%);
   }
 }
+
+@-webkit-keyframes logo-load {
+  0% {
+    -webkit-transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(100%);
+  }
+
+}
+
 
 a.logo {
   width: 20%;
