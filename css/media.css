@@ -103,6 +103,10 @@
   .cta-buttons {
     margin-top: 1rem;
   }
+
+  .about-area {
+    margin-bottom: 8rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
